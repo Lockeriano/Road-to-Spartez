@@ -1,0 +1,159 @@
+body {
+  background-color: #ecf0f1;
+  padding: 2rem;
+  font-size: 62.5%;
+  font-family: "Open Sans"; }
+
+.navbar {
+  width: 100%;
+  border-bottom: 0.1rem solid #b6babb; }
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0; }
+    .navbar ul .active {
+      border-bottom: 0.1rem solid #33c280;
+      box-shadow: 0 0.1rem 0 #33c280; }
+      .navbar ul .active a {
+        color: black; }
+    .navbar ul li {
+      display: inline-block;
+      padding: 0rem 2.2rem;
+      border-bottom: 0.1rem solid transparent;
+      padding-bottom: 1rem; }
+      .navbar ul li a {
+        font-size: 1.6rem;
+        cursor: pointer;
+        color: #b6babb; }
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; }
+  #container i {
+    color: #dc7b1d; }
+  #container .note,
+  #container .img-note {
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    margin-right: 4rem;
+    margin-top: 4rem;
+    box-shadow: 0 0.1rem 0 #b6babb; }
+    #container .note h1,
+    #container .img-note h1 {
+      font-size: 1.4rem;
+      line-height: 1.4rem;
+      margin: 0; }
+    #container .note p,
+    #container .img-note p {
+      font-size: 1rem;
+      margin: 0;
+      margin-top: 0.8rem;
+      word-spacing: 0.1rem;
+      letter-spacing: -0.1rem; }
+    #container .note .date,
+    #container .img-note .date {
+      margin: 0;
+      margin-top: 0.5rem;
+      color: #b6babb; }
+    #container .note .note-type,
+    #container .img-note .note-type {
+      color: #b6babb;
+      position: absolute;
+      right: 1rem;
+      bottom: 1rem; }
+    #container .note a,
+    #container .img-note a {
+      color: #dc7b1d; }
+  #container .img-note {
+    background-image: url(http://www.planwallpaper.com/static/images/Fall-Nature-Background-Pictures.jpg);
+    background-position: top; }
+    #container .img-note:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-image: linear-gradient(to bottom, transparent, black);
+      opacity: .7;
+      border-radius: 0.5rem; }
+    #container .img-note h1 {
+      position: absolute;
+      color: white;
+      bottom: 3rem; }
+    #container .img-note p {
+      color: white; }
+    #container .img-note .img-date {
+      position: absolute;
+      color: #b6babb;
+      left: 1rem;
+      bottom: 1rem; }
+    #container .img-note i {
+      color: #b6babb; }
+    #container .img-note .img-note-btn {
+      position: absolute;
+      right: 2rem;
+      bottom: 1rem; }
+    #container .img-note a {
+      color: #b6babb; }
+  #container .btn {
+    position: absolute;
+    text-decoration: none;
+    bottom: 1rem; }
+  #container .btn-counter {
+    position: absolute;
+    margin-right: 4rem;
+    text-decoration: none;
+    color: inherit; }
+  #container .btn-counter:before {
+    position: absolute;
+    content: attr(data-count);
+    font-size: 1rem;
+    left: 2.2rem;
+    bottom: 0; }
+  #container .btn-counter:after {
+    position: absolute;
+    content: "votes";
+    font-size: 1rem;
+    left: 3.6rem;
+    bottom: 0; }
+
+@media only screen and (max-width: 911px) {
+  #container .note,
+  #container .img-note {
+    margin-right: 0;
+    margin-top: 0;
+    margin: 2rem; }
+  #container .note:nth-child(1) {
+    margin-top: 4rem; } }
+
+@media only screen and (max-width: 600px) {
+  .navbar {
+    border-bottom: none; }
+    .navbar ul {
+      text-align: center; } }
+
+@media only screen and (max-width: 472px) {
+  ul {
+    margin: 0; }
+    ul li {
+      padding: 0;
+      margin: 1rem;
+      margin-top: 2rem; } }
+
+@media only screen and (max-width: 375px) {
+  .navbar ul li {
+    margin: 1rem 0; }
+  #container .note,
+  #container .img-note {
+    height: 25rem; }
+    #container .note .img-note-btn,
+    #container .img-note .img-note-btn {
+      right: 0; }
+  .btn-counter:after {
+    display: none; } }
